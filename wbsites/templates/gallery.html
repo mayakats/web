@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+
+
+</head>
+<body>
+    <h2 id="pt">Gallery</h2>
+    <img src="{% static 'images/cam.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/cdb.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/tg.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/yfd.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/vf.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/f - Copy.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/j.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/i.jpg' %}" alt="This is an image">
+
+
+    <div id="tes">
+        <h3 id="pt">Testimonials</h3>
+    <h4 id="pt">Arianah Hirat</h4>
+    <p id="pt">Bought my first microwave from here. By far the best product</p>
+
+    </div>
+    
+    <a href="{% url 'contactus_page' %}">contactus</a>
+</body>
+</html>

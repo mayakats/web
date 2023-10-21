@@ -1,0 +1,76 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="styl.css">
+   <link rel="stylesheet" href="{% static 'css/styl.css' %}">
+   <link rel="stylesheet" type="static/css" href="{% static 'myapp/style.css' %}">
+
+</head>
+<body class="hp">
+ 
+    <div id="hearder-div">
+        <h1 >MAYA ELECTRONICS </h1>
+        
+        <p style="font-size: x-large;color: rgb(226, 187, 11);text-align: center;">
+            Wide Range Of Large Appliances to Choose From And Make Life Simpler
+        </p>
+
+        <div id="menu-div">
+            
+            <ul id="menu-items">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>Gallery</li>
+                <li>Contact Us</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    
+    
+ <div id="content">
+    
+        <h2 style="color:white;">Description</h2>
+    
+</div>
+   
+<p>
+<div id="cen">
+<img src="{% static 'images/d - Copy.jpg' %}" id="im" alt="This is an image" class="center">
+</div>
+</p>
+<p id="pp" >
+Appliances Designed to Ease Your Life
+</p>
+<h2 style="color:white;">Appliances Include</h2>
+<ol>
+    <div id="hm">  
+<li style="color: black;">Electronics Appliances</li>
+<img src="{% static 'images/pt.jpg' %}" alt="This is an image">
+<img src="{% static 'images/tp.jpg' %}" alt="This is an image">
+<img src="{% static 'images/lp.jpg' %}" alt="This is an image">
+<img src="{% static 'images/pp.jpg' %}" alt="This is an image">
+
+<li style="color: black;">Home Appliances</li>
+<img src="{% static 'images/rg.jpg' %}" alt="This an image">
+<img src="{% static 'images/kk.jpg' %}" alt="This an image">
+<img src="{% static 'images/jn.jpg' %}" alt="This an image">
+
+</div>
+<li style="color: black;">Kitchen Appliances</li>
+<img src="{% static 'images/tt.jpg' %}" alt="This is an image">
+<img src="{% static 'images/gg.jpg' %}" alt="This is an image">
+<img src="{% static 'images/aa.jpg' %}" alt="This is an image">
+<img src="{% static 'images/cdb.jpg' %}" alt="This is an image">
+</ol>
+ <a href="{% url 'products_page' %}">products</a>
+</body>
+
+</html>

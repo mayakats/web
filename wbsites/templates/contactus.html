@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <script>
+        function SayHello(){
+            var userinput = document.querySelector("#nm").value;
+            alert("Hello "+userinput);
+        }
+        
+        
+    </script>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="java.js">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+
+
+</head>
+<body class="gbc">
+    <h2 id="nb">Contact Us</h2>
+    <h3>Our Office Address</h3>
+    <p>Maya Building,3rd Floor B006 Kisaasi Road, Kampala-Uganda</p>
+    <h3>Call Us</h3>
+    <p>+256-706844494</p>
+    <h3>General Enquiries</h3>
+    <p>maya@electronics.com</p>
+    <h3>Our Timing</h3>
+    <p>Mon-Sun : 9:00AM-8:00PM</p>
+    <form action="">
+        <p><input type="text" class="c-c" id="nm" placeholder="Your Name"></p>
+        <p></p><input type="text" class="c-c"id="" placeholder="Your Email"></p> 
+        <p></p><input type="text" class="c-c" id="" placeholder="Your Contact No."></p>
+        <p id="infor-list"><input type="text" class="c-c" id="mess"  placeholder= "enter message" onkeyup="checkinput()" "Your Message" ></p>
+        <button id="sub" onclick="SayHello()" >SUBMIT</button>
+    </form>
+
+    <a href="{% url 'home_page' %}">home</a>
+</body>
+</html>

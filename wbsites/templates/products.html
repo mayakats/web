@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+
+
+</head>
+<body>
+    <h2 id="pt">Products</h2>
+    <img src="{% static 'images/jb.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/vf.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/f - Copy.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/vc.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/sec.jpg' %}" alt="This is an image">
+    <div id="top">
+        <h2 id="pt">Top Brand</h2>
+    <div id="tbr">
+        <img src="{% static 'images/vv.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/ee.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/MM.jpg' %}" alt="This is an image">
+    <img src="{% static 'images/DD.jpg' %}" alt="This is an image">
+    </div>
+    </div>
+    
+    <a href="{% url 'services_page' %}">services</a>
+
+
+
+</body>
+</html>

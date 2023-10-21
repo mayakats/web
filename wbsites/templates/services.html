@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service page</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+
+
+</head>
+<body style="font-weight: bold;">
+    <h2 id="pt">Services</h2>
+  
+    
+      <p><img src="{% static 'images/LL.jpg' %}" id="sev" alt="This is an image">
+    Home Delivery</p> 
+    <p><img src="{% static 'images/CC.jpg' %}" id="sev" alt="This is an image">
+    Online Payment</p>
+      <p><img src="{% static 'images/XX.jpg' %}" id="sev" alt="This is an image">
+    Assured Quality</p>
+    <p><img src="{% static 'images/RR.jpg' %}" id="sev" alt="This is an image">
+    Wide Assortment</p>
+    
+<a href="{% url 'aboutus_page' %}">aboutus</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="styl.css">
+   <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}">
+
+
+</head>
+<body class="gbc">
+    <h2 id="bt">About Us</h2>
+    <div id="abut">
+        <img src="{% static 'images/est.jpg' %}" id="abt" alt="This is an image">
+    </div>
+ <p>
+    We, Maya Electronics located at Maya Building,3rd Floor B006 Kisaasi Road,Kampala-Uganda are a leading dealers of electronics and appliances at most affordable rates. We believe that shopping should be a very simple and easy task. We are a local e-commerce platform that intends to transform the shopping experience for our customers, by bringing our Store right to your fingertips. We aim to become the one-stop shop for all your daily needs by replacing your store visits by a few clicks on your computer or mobile.
+ </p> 
+ 
+ <a href="{% url 'gallery_page' %}">gallery</a>
+</body>
+</html>
